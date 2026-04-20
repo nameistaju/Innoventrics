@@ -1,0 +1,17 @@
+/* This is a placeholder file for your hero video background.
+ * 
+ * To add your video background:
+ * 1. Upload your video file to the public folder as "hero-video.mp4"
+ * 2. Make sure the video is:
+ *    - In MP4 format for best browser compatibility
+ *    - Optimized for web (compressed but good quality)
+ *    - Landscape orientation (16:9 aspect ratio recommended)
+ *    - At least 1920x1080 resolution for desktop
+ *    - Keep file size under 50MB for fast loading
+ * 
+ * The video will automatically:
+ * - Loop continuously
+ * - Play muted (required for autoplay)
+ * - Have a dark overlay for text readability
+ * - Be responsive across all devices
+ */

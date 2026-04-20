@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innoventrics | Creative Agency</title>
+  <meta
+    name="description"
+    content="Innoventrics crafts premium digital experiences through design, development, motion, and growth-focused strategy."
+  >
+  <meta name="author" content="Innoventrics">
+  <meta
+    name="keywords"
+    content="creative agency, ui ux, web design, web development, motion design, portfolio"
+  >
+  <meta property="og:title" content="Innoventrics | Creative Agency">
+  <meta
+    property="og:description"
+    content="Premium websites, design systems, and digital experiences built to transform brands and convert visitors."
+  >
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="public/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb-left" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb-right" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Innoventrics home">
+        <span class="brand-mark">
+          <img src="public/images/Innoventrics_logo.png" alt="Innoventrics logo">
+        </span>
+        <span class="brand-copy">
+          <strong>Innoventrics</strong>
+          <small>Digital growth agency</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="button button-primary desktop-cta" href="#contact">Start a Project</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="button button-primary" href="#contact">Start a Project</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section section-full">
+      <video
+        class="section-video"
+        src="public/videos/hero-video.webm"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="section-overlay hero-overlay"></div>
+
+      <div class="container hero-content reveal">
+        <p class="eyebrow">UX/UI &amp; DEV</p>
+        <h1>Creative Agency</h1>
+        <p class="hero-copy">
+          Innoventrics crafts exceptional digital experiences that transform brands and convert visitors through design, development, AI integration, tech systems, and marketing.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Start a project</a>
+          <a class="button button-secondary" href="#work">Explore work</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Our Services</p>
+            <h2>Built for premium brands that want momentum, clarity, and conversion.</h2>
+          </div>
+          <a class="button button-secondary heading-link" href="#contact">Learn more</a>
+        </div>
+
+        <div class="service-grid">
+          <article class="media-tile reveal" data-video-card>
+            <video src="public/videos/development.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="tile-copy">
+              <h3>Development</h3>
+              <p>Scalable website systems, premium front-end execution, and launch-ready builds.</p>
+            </div>
+          </article>
+
+          <article class="media-tile media-tile-wide reveal" data-video-card>
+            <video src="public/videos/Web_design.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="tile-copy">
+              <h3>Editing</h3>
+              <p>Content refinement, branded visuals, and high-end presentation polish for campaigns and launches.</p>
+            </div>
+          </article>
+
+          <article class="media-tile reveal" data-video-card>
+            <video src="public/videos/brand.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="tile-copy">
+              <h3>Graphic Design / Digital</h3>
+              <p>Brand assets, digital campaigns, social content, and visuals that keep the identity consistent.</p>
+            </div>
+          </article>
+
+          <article class="media-tile reveal" data-video-card>
+            <video src="public/videos/Web_design.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="tile-copy">
+              <h3>UI / UX</h3>
+              <p>Interface strategy and user flows designed to feel effortless and convert with clarity.</p>
+            </div>
+          </article>
+
+          <article class="media-tile reveal" data-video-card>
+            <video src="public/videos/motion_graphics.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="tile-copy">
+              <h3>Motion Design</h3>
+              <p>Fluid interactions, motion systems, and premium transitions that elevate the experience.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Project stories designed to feel cinematic before the first scroll is over.</h2>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-video-card>
+            <video src="public/videos/reveal.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="project-copy">
+              <p>Fintech Platform</p>
+              <h3>Nova Finance</h3>
+              <div class="tag-row">
+                <span>Website Development</span>
+                <span>UI/UX Design</span>
+                <span>AI Integration</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-video-card>
+            <video src="public/videos/reveal 2.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="project-copy">
+              <p>Healthcare Experience</p>
+              <h3>Aether Health</h3>
+              <div class="tag-row">
+                <span>UI/UX Design</span>
+                <span>Tech Solutions</span>
+                <span>Digital Marketing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-video-card>
+            <video src="public/videos/reveal3.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="project-copy">
+              <p>Commerce Growth</p>
+              <h3>OrbitX Commerce</h3>
+              <div class="tag-row">
+                <span>Website Development</span>
+                <span>Digital Marketing</span>
+                <span>AI Integration</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-video-card>
+            <video src="public/videos/reveal4.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="tile-overlay"></div>
+            <div class="project-copy">
+              <p>Brand Commerce</p>
+              <h3>Atelier Commerce</h3>
+              <div class="tag-row">
+                <span>UI/UX Design</span>
+                <span>Development</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <article class="panel panel-feature reveal">
+          <p class="eyebrow">About Innoventrics</p>
+          <h2>We turn innovation into clarity, momentum, and measurable client impact.</h2>
+        </article>
+
+        <div class="about-cards">
+          <article class="panel reveal">
+            <p class="eyebrow subdued">Innovation</p>
+            <p>We pair modern design systems, AI thinking, and performance-minded execution to create a stronger competitive edge.</p>
+          </article>
+          <article class="panel reveal">
+            <p class="eyebrow subdued">Results</p>
+            <p>Every layout, animation, and CTA is tuned to improve trust, shorten the path to action, and lift conversion quality.</p>
+          </article>
+          <article class="panel reveal panel-wide">
+            <p class="eyebrow subdued">Client impact</p>
+            <p>Clients come to Innoventrics when their digital presence no longer matches their ambition. We build the layer that makes growth feel inevitable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section">
+      <div class="container reviews-header reveal">
+        <div>
+          <p class="eyebrow">Social proof</p>
+          <h2>The aftermath of awesome.</h2>
+        </div>
+        <div class="reviews-meta">
+          <span class="reviews-brand">Clutch</span>
+          <span>★★★★★</span>
+          <span>14 reviews</span>
+        </div>
+      </div>
+
+      <div class="review-track">
+        <div class="review-row">
+          <article class="review-card">
+            <span>★★★★★</span>
+            <p>Innoventrics made our brand feel premium overnight. The site now closes credibility gaps before our sales team even enters the conversation.</p>
+            <strong>Maya Chen</strong>
+            <small>Founder, Nova Finance</small>
+          </article>
+          <article class="review-card">
+            <span>★★★★★</span>
+            <p>Their team balanced strategy, design, and delivery without losing momentum. Everything felt intentional, polished, and genuinely conversion-driven.</p>
+            <strong>Ethan Brooks</strong>
+            <small>CMO, OrbitX Commerce</small>
+          </article>
+          <article class="review-card">
+            <span>★★★★★</span>
+            <p>The hover interactions, pacing, and clarity completely changed how clients experience our brand. It feels world-class now.</p>
+            <strong>Sofia Rahman</strong>
+            <small>Director, Aether Health</small>
+          </article>
+          <article class="review-card">
+            <span>★★★★★</span>
+            <p>Innoventrics made our brand feel premium overnight. The site now closes credibility gaps before our sales team even enters the conversation.</p>
+            <strong>Maya Chen</strong>
+            <small>Founder, Nova Finance</small>
+          </article>
+          <article class="review-card">
+            <span>★★★★★</span>
+            <p>Their team balanced strategy, design, and delivery without losing momentum. Everything felt intentional, polished, and genuinely conversion-driven.</p>
+            <strong>Ethan Brooks</strong>
+            <small>CMO, OrbitX Commerce</small>
+          </article>
+          <article class="review-card">
+            <span>★★★★★</span>
+            <p>The hover interactions, pacing, and clarity completely changed how clients experience our brand. It feels world-class now.</p>
+            <strong>Sofia Rahman</strong>
+            <small>Director, Aether Health</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-full contact-section" id="contact">
+      <video
+        class="section-video"
+        src="public/videos/footer-video.webm"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="section-overlay contact-overlay"></div>
+
+      <div class="container contact-shell">
+        <div class="stat-grid reveal">
+          <article><p>AWWWARDS</p><strong>2x Nominee</strong></article>
+          <article><p>Innoventrics</p><strong>10x Launches</strong></article>
+          <article><p>Clutch</p><strong>2x Recognized</strong></article>
+          <article><p>Behance</p><strong>4x Featured</strong></article>
+          <article><p>Growth</p><strong>37x Results</strong></article>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card reveal">
+            <h3>About Us</h3>
+            <div class="contact-list">
+              <div>
+                <p>Email</p>
+                <a href="mailto:hello@innoventrics.com">hello@innoventrics.com</a>
+              </div>
+              <div>
+                <p>Phone</p>
+                <a href="tel:+917799821618">+91 77998 21618</a>
+              </div>
+              <div>
+                <p>Address</p>
+                <span>Chicago, IL / Remote Worldwide</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="contact-card reveal">
+            <h3>Links</h3>
+            <div class="link-stack">
+              <a href="#work">Work</a>
+              <a href="#services">Services</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact Us</a>
+            </div>
+          </article>
+
+          <article class="contact-card reveal">
+            <h3>Social Media</h3>
+            <div class="link-stack">
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.behance.net" target="_blank" rel="noreferrer">Behance</a>
+              <a href="https://dribbble.com" target="_blank" rel="noreferrer">Dribbble</a>
+            </div>
+          </article>
+
+          <article class="contact-card reveal">
+            <h3>Build With Us</h3>
+            <p class="build-copy">Premium websites, brand systems, and growth-focused digital experiences with motion and clarity built in.</p>
+            <a class="button button-primary" href="mailto:hello@innoventrics.com">Start a Project</a>
+          </article>
+        </div>
+
+        <footer class="site-footer reveal">
+          <strong>Innoventrics</strong>
+          <span>&copy; 2026 Innoventrics. All rights reserved.</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
