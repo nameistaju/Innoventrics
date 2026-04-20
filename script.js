@@ -62,6 +62,16 @@ const prepareVideo = (video) => {
   video.setAttribute("playsinline", "");
 };
 
+const primeVideo = (video) => {
+  if (video.dataset.primed === "true") {
+    return;
+  }
+
+  video.preload = "metadata";
+  video.load();
+  video.dataset.primed = "true";
+};
+
 const mobilePlaybackTargets = [];
 
 videoCards.forEach((card) => {
@@ -71,6 +81,9 @@ videoCards.forEach((card) => {
   }
 
   prepareVideo(video);
+  video.addEventListener("loadeddata", () => {
+    card.classList.add("video-ready");
+  });
 
   if (prefersTouchPlayback) {
     mobilePlaybackTargets.push({
@@ -81,6 +94,7 @@ videoCards.forEach((card) => {
     return;
   }
 
+  primeVideo(video);
   card.addEventListener("mouseenter", () => safelyPlayVideo(video));
   card.addEventListener("mouseleave", () => resetVideo(video));
   card.addEventListener("focusin", () => safelyPlayVideo(video));
@@ -89,20 +103,48 @@ videoCards.forEach((card) => {
 
 autoplaySections.forEach((video) => {
   prepareVideo(video);
+  const section = video.closest(".section-full") ?? video;
+
+  video.addEventListener("loadeddata", () => {
+    section.classList.add("video-ready");
+  });
 
   if (!prefersTouchPlayback) {
+    primeVideo(video);
     safelyPlayVideo(video);
     return;
   }
 
   mobilePlaybackTargets.push({
-    element: video.closest(".section-full") ?? video,
+    element: section,
     video,
     onExit: pauseVideo,
   });
 });
 
 if (prefersTouchPlayback && mobilePlaybackTargets.length > 0) {
+  const mobileVideoLoader = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        const target = mobilePlaybackTargets.find(({ element }) => element === entry.target);
+        if (!target) {
+          return;
+        }
+
+        primeVideo(target.video);
+        mobileVideoLoader.unobserve(target.element);
+      });
+    },
+    {
+      rootMargin: "240px 0px",
+      threshold: 0.01,
+    }
+  );
+
   const mobileVideoObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -124,6 +166,7 @@ if (prefersTouchPlayback && mobilePlaybackTargets.length > 0) {
   );
 
   mobilePlaybackTargets.forEach(({ element }) => {
+    mobileVideoLoader.observe(element);
     mobileVideoObserver.observe(element);
   });
 }
