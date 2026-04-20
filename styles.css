@@ -429,9 +429,7 @@ strong {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 1rem;
-  background:
-    radial-gradient(circle at top left, rgba(109, 255, 91, 0.16), transparent 42%),
-    linear-gradient(180deg, #040705 0%, #020303 100%);
+  background: #030506;
 }
 
 .media-tile video,
@@ -443,12 +441,6 @@ strong {
   object-fit: cover;
   opacity: 0.3;
   transition: transform 0.5s ease, opacity 0.35s ease;
-}
-
-.media-tile.video-ready video,
-.project-card.video-ready video,
-.section-full.video-ready .section-video {
-  opacity: 0.68;
 }
 
 .media-tile:hover video,
@@ -797,40 +789,6 @@ strong {
 
   .hero h1 {
     font-size: clamp(3.3rem, 18vw, 5rem);
-  }
-
-  .hero-copy {
-    font-size: 1rem;
-    line-height: 1.65;
-  }
-
-  .hero-actions {
-    gap: 0.75rem;
-  }
-
-  .hero-actions .button {
-    width: 100%;
-  }
-
-  .media-tile,
-  .project-card {
-    min-height: 21rem;
-  }
-
-  .media-tile video,
-  .project-card video {
-    opacity: 0;
-  }
-
-  .media-tile.video-ready video,
-  .project-card.video-ready video {
-    opacity: 0.78;
-  }
-
-  .tile-copy p,
-  .project-copy p {
-    font-size: 1rem;
-    line-height: 1.6;
   }
 
   .tile-copy,
